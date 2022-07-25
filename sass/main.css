@@ -11,7 +11,7 @@ html {
 }
 
 .container {
-  background-image: linear-gradient(rgba(231, 98, 98, 0.5), rgba(62, 83, 70, 0.5)), url(/img/fixed.png);
+  background-image: linear-gradient(rgba(39, 88, 10, 0.5), rgba(62, 83, 70, 0.5)), url(/img/pic.png);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -21,7 +21,7 @@ html {
 }
 .container header {
   width: 100wh;
-  height: 15rem;
+  height: 25rem;
   position: sticky;
   background-image: url(/img/fixed2.png);
   background-position: center;
@@ -36,12 +36,15 @@ html {
 }
 .container header .description {
   font-family: "Square Peg", cursive;
-  font-size: 5rem;
-  color: rgba(14, 15, 15, 0.899);
+  font-size: 6rem;
+  color: rgba(7, 3, 54, 0.8);
+  font-weight: bold;
   text-align: center;
 }
 .container header span {
-  color: rgb(98, 69, 172);
+  color: rgb(71, 12, 12);
+  font-weight: bolder;
+  font-size: 6rem;
 }
 .container nav {
   display: flex;
@@ -51,10 +54,9 @@ html {
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  border: 10rem;
   font-size: 2.5rem;
   padding: 1rem;
-  background: rgba(8, 165, 212, 0.7);
+  background: rgba(255, 255, 255, 0.4);
   z-index: 9999;
 }
 .container .fixed .active {
@@ -62,15 +64,21 @@ html {
   transition: 0.3ms ease text-decoration;
   color: #50eb3b;
 }
-.container .navbar.sticky {
+.container .sticky {
   position: fixed;
-  background-color: rgba(54, 115, 148, 0.5);
+  background-color: rgba(25, 94, 4, 0.5);
   top: 0;
   height: 8rem;
   z-index: 999999;
 }
+.container .sticky span {
+  font-size: 3.5rem;
+}
+.container span {
+  padding: 1.5rem;
+}
 .container a {
-  color: black;
+  color: rgb(3, 1, 1);
   text-decoration: none;
 }
 .container a:hover {
@@ -83,91 +91,34 @@ html {
   align-items: center;
   justify-content: space-around;
   font-size: 5rem;
-  padding-top: 12rem;
-  color: rgb(216, 65, 75);
+  padding-top: 8rem;
+  color: rgb(255, 255, 255);
   z-index: 999;
 }
 .container .gig:hover:hover {
   color: rgb(196, 111, 111);
 }
-.container .feedback {
-  padding-top: 1rem;
-  text-align: center;
-  font-size: 3rem;
-  color: rgb(241, 67, 13);
+.container .achievement {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
 }
-.container .reviews {
-  text-align: center;
-  padding-top: 7rem;
-  color: rgba(230, 230, 230, 0.776);
-  font-family: "EB Garamond", serif;
+.container .achievement div {
+  left: 20rem;
+  height: 25vh;
+  width: 33vw;
+  background-color: rgba(5, 41, 12, 0.7);
+  padding: 2rem;
 }
-.container .reviews img {
-  height: 3.5rem;
-}
-.container .reviews p {
-  padding-top: 2rem;
-  font-size: 2.5rem;
-}
-.container .modal_body {
-  padding-top: 2vh;
-  cursor: pointer;
-}
-.container .h2 {
-  padding-top: 2rem;
+.container .achievement div li {
   font-size: 2rem;
-  color: rgb(211, 59, 48);
+  color: #ffffff;
+  padding: 0.25rem;
 }
-.container .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(88, 199, 171, 0.4); /* Black w/ opacity */
-  /* Modal Content */
-}
-.container .modal .modal-content {
-  background-color: rgba(14, 155, 165, 0.7);
-  margin: auto;
-  padding: 5rem;
-  border: 1px solid #888;
-  width: 80vw;
-  height: 50vh;
-  /* The Close Button */
-}
-.container .modal .modal-content h2 {
+.container .achievement div ul {
   font-size: 2rem;
-}
-.container .modal .modal-content p {
-  font-size: 2rem;
-}
-.container .modal .modal-content input {
-  background-color: rgba(173, 222, 236, 0.5);
-  border: none;
-  border-radius: 20%;
-}
-.container .modal .modal-content .close {
-  color: #f80404;
-  float: right;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
-}
-.container .modal .modal-content .ebcf_close:hover,
-.container .modal .modal-content .ebcf_close:focus {
-  color: rgba(131, 24, 24, 0.5);
-  text-decoration: none;
-  cursor: pointer;
-}
-.container .modal .modal-content .form {
-  font-size: 2rem;
-  color: rgb(131, 36, 36);
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .container1 {
@@ -180,6 +131,25 @@ html {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+}
+.container1 .feedback {
+  padding-bottom: 4rem;
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(114, 39, 16);
+}
+.container1 .reviews {
+  text-align: center;
+  padding-bottom: 10rem;
+  color: rgba(255, 255, 255, 0.776);
+  font-family: "EB Garamond", serif;
+}
+.container1 .reviews img {
+  height: 5.5rem;
+}
+.container1 .reviews p {
+  padding-top: 2rem;
+  font-size: 3.5rem;
 }
 .container1 div {
   display: flex;
@@ -195,28 +165,31 @@ html {
   width: 100%;
   height: 5vh;
   align-items: center;
-  padding: 5em;
   background-color: solid rgb(52, 186, 177);
 }
 .container1 span {
-  padding: 4rem;
+  padding-bottom: 2rem;
 }
 .container1 h1 {
-  font-size: 3rem;
-  color: beige;
+  font-size: 3.5rem;
+  color: rgba(12, 37, 104, 0.8);
+  padding: 2rem;
+}
+.container1 h1:hover {
+  color: rgba(2, 9, 26, 0.9);
 }
 .container1 a {
   font-size: 2.5rem;
   text-decoration: none;
-  color: white;
+  color: rgb(158, 42, 42);
 }
 .container1 img {
-  height: 3.5rem;
+  height: 6.5rem;
 }
 
 .container3 {
   height: 100vh;
-  width: 100wh;
+  width: 100vw;
   background-image: linear-gradient(rgba(154, 210, 175, 0.5), rgba(40, 70, 52, 0.5)), url(/img/last.jpg);
   background-size: cover;
   background-position: center;
@@ -229,7 +202,7 @@ html {
 }
 .container3 .carousel .carousel_item {
   height: 80vh;
-  width: 50vw;
+  width: 60vw;
   background-color: #888;
   color: #f80404;
   font-size: 4rem;
@@ -240,17 +213,17 @@ html {
 }
 .container3 .carousel .carousel_item .img {
   height: 80vh;
-  width: 50vw;
+  width: 60vw;
 }
 .container3 .carousel .carousel_item video {
   height: 80vh;
-  width: 50vw;
+  width: 60vw;
 }
 .container3 .carousel .item_selected {
   display: block;
 }
 .container3 .carousel .car_nav {
-  width: 50vw;
+  width: 60vw;
   height: 5vh;
   position: absolute;
   bottom: 0;
@@ -258,16 +231,16 @@ html {
   text-align: center;
 }
 .container3 .carousel .car_nav .btn {
-  height: 1rem;
-  width: 1rem;
+  height: 2rem;
+  width: 2rem;
   display: inline-block;
-  background-color: rgba(69, 134, 39, 0.3);
+  background-color: rgba(98, 122, 12, 0.3);
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
 }
 .container3 .carousel .car_nav .btn_selected {
-  background-color: rgba(3, 37, 14, 0.5);
+  background-color: rgba(145, 53, 11, 0.5);
 }
 
 .container4 {
@@ -278,7 +251,15 @@ html {
   background-position: center;
   align-items: center;
 }
+.container4 header {
+  padding: 1rem;
+  height: 5vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 2rem;
+}
 .container4 .blog_nav {
+  padding: 1rem;
   height: 5vh;
   width: 100vw;
   background-color: #31a5a5;
@@ -290,33 +271,99 @@ html {
   width: 100vw;
   display: flex;
   align-items: center;
-  background-color: rgb(255, 30, 0);
+  background-color: rgb(224, 154, 145);
   text-align: center;
   font-size: 3rem;
 }
-.container4 .blog_nav .blogs {
+.container4 .blog_nav a {
   font-size: 2rem;
+  color: #b4174b;
+  padding: 1rem;
+}
+.container4 .write_box {
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.container4 .write_box .write {
+  padding-top: 2.5vh;
+  width: 80vw;
+  height: 5vh;
+  font-size: 2.3rem;
+  color: rgb(30, 53, 156);
+  font-family: cursive;
+}
+.container4 .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(88, 199, 171, 0.4); /* Black w/ opacity */
+  /* Modal Content */
+}
+.container4 .modal .modal-content {
+  background-color: rgba(14, 155, 165, 0.7);
+  margin: auto;
+  padding: 5rem;
+  border: 1px solid #888;
+  width: 80vw;
+  height: 50vh;
+  /* The Close Button */
+}
+.container4 .modal .modal-content h2 {
+  font-size: 2rem;
+}
+.container4 .modal .modal-content p {
+  font-size: 2rem;
+}
+.container4 .modal .modal-content input {
+  background-color: rgba(173, 222, 236, 0.5);
+  border: none;
+  border-radius: 20%;
+}
+.container4 .modal .modal-content .close {
   color: #f80404;
-  padding: 1rem;
-}
-.container4 .content {
-  text-align: center;
-  height: 80vh;
-  width: 60vw;
-}
-.container4 .content h1 {
-  color: rgb(38, 0, 255);
-  padding: 7vh;
+  float: right;
   font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
 }
-.container4 .content h2 {
-  color: #13258d;
-  padding: 1rem;
-  font-size: 2.5rem;
-  left: 1rem;
+.container4 .modal .modal-content .ebcf_close:hover,
+.container4 .modal .modal-content .ebcf_close:focus {
+  color: rgba(131, 24, 24, 0.5);
+  text-decoration: none;
+  cursor: pointer;
 }
-.container4 .content p {
+.container4 .modal .modal-content .form {
   font-size: 2rem;
+  color: rgb(131, 36, 36);
+}
+.container4 .parts {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+  padding-top: 5%;
+}
+.container4 .parts div {
+  height: 70vh;
+  width: 19vw;
+  padding: 1rem;
+  text-align: center;
+}
+.container4 .parts div span {
+  padding: 1rem;
+}
+.container4 .parts div img {
+  height: 70vh;
+  width: 19vw;
 }
 
 /*# sourceMappingURL=main.css.map */
