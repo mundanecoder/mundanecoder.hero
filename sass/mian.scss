@@ -1,0 +1,380 @@
+
+ @import "mixin";
+ @import "var";
+
+
+*{
+    margin: 0;
+    // z-index: -99;
+    padding: 0;
+    box-sizing: border-box;
+    // border-top:1rem solid green;
+    // font-family: 'Square Peg', cursive;
+    
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+.container{
+    @include flexmin;
+    background-image :(linear-gradient(rgba(231, 98, 98, 0.5),rgba(62, 83, 70, 0.5)),url(/img/fixed.png));
+    background-size: cover;
+    // background: rgb(49,125,134);
+    // background: linear-gradient(90deg, rgba(49,125,134,1) 0%, rgba(204,215,226,1) 0%),url(/img/bg4.png);
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    header{
+        width: 100wh;
+        height: 15rem;
+        position:sticky;
+        // background-color:#7e652b;
+        background-image: url(/img/fixed2.png);
+        background-position:center;
+        background-size: cover;
+        align-items: center;
+
+        #SIGN{
+            // font-family: 'Mukta', sans-serif;
+            font-family: 'Square Peg', cursive;
+            font-size: 9rem;
+            // padding-top: 0.5em;
+            text-align: center;
+            color:rgb(216, 67, 26);
+
+        }
+        .description{
+            font-family: 'Square Peg', cursive;
+            font-size :5rem ;
+            color: rgba(14, 15, 15, 0.899);
+            text-align: center;
+        }
+        span{
+            color: rgb(98, 69, 172);
+        }
+
+    }
+
+    nav{
+        // padding: 1rem;
+        display: flex;
+        justify-content: center;
+        // color: $txt-color;
+        // background: rgb(2,0,36);
+    }
+    
+    
+    .fixed{
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        border: 10rem;
+        font-size: 2.5rem;
+        padding: 1rem;
+        background: rgba(17, 173, 95, 0.7);
+        // position: fixed;
+        // z-index: 99;
+
+        // .active11{
+            // background-color: #000000;
+        // }
+        .active{
+            // background-color: #bb2828;
+            text-decoration: underline;
+
+            transition: 0.3ms ease text-decoration;
+            // font-size: 2rem;
+            color: #50eb3b;
+        }
+        // .active a{
+        //     color: white;
+
+        // }
+        
+    }
+    .navbar.sticky{
+        position: fixed;
+        background-color: rgba(54, 115, 148, 0.5);
+        top: 0;
+        height: 7rem;
+        z-index: 99999;
+        // border:100rem;
+        // background: blue;
+        // left: 0;
+        // padding: 1em,2em;
+        // font-size: 3rem;
+    }
+    
+    span{
+        padding: 0.5rem;
+    }
+    a{
+        color:black;
+        text-decoration: none;
+    }
+    a:hover{
+        color:$txt-hover;
+        text-decoration: underline;
+
+    }
+    .services{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 5rem;
+        padding-top: 12rem;
+        color: rgb(216, 65, 75);
+        z-index:999;
+    }
+    .gig:hover:hover{
+        color: rgb(196, 111, 111);
+    }
+    .feedback{
+        padding-top: 1rem;
+        text-align: center;
+        font-size: 3rem;
+        color: rgb(241, 67, 13);
+
+
+    }
+    .reviews{
+        text-align: center;
+        padding-top: 7rem;
+        color:rgba(230, 230, 230, 0.776);
+        // font-weight: 700;
+        font-family: 'EB Garamond', serif;
+        // font-family: 'Pacifico', cursive;
+        // font-family: 'PT Serif', serif;
+
+        img{
+            height: 3.5rem;
+        }
+        p{  
+            padding-top: 2rem;
+            font-size: 2.5rem;
+            // z-index:999;
+        }
+    }
+    .modal_body{
+        padding-top: 2vh;
+        cursor: pointer;
+    }
+
+    .h2{
+        padding-top: 2rem;
+        font-size: 2rem;
+        color: rgb(211, 59, 48);
+    }
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100vw; 
+        height: 100vh;
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(88, 199, 171, 0.4); /* Black w/ opacity */
+        
+    
+    
+    /* Modal Content */
+    .modal-content {
+        background-color: rgba(14, 155, 165, 0.7);
+        margin: auto;
+        padding: 5rem;
+        border: 1px solid #888;
+        width: 80vw;
+        height: 50vh;
+        // text-align: center;
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+    input{
+        background-color: rgba(173, 222, 236, 0.5);
+        border: none;
+        border-radius: 20%;
+    }
+    
+    /* The Close Button */
+    .close {
+        color: #f80404;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .ebcf_close:hover,
+    .ebcf_close:focus {
+        color: rgba(131, 24, 24,0.5);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .form{
+        font-size: 2rem;
+        color: rgb(131, 36, 36);
+    }
+}
+    }    
+}
+
+
+
+
+
+
+.container1{
+    // margin: 0;
+    height: 100vh;
+    width: 100%;
+
+    background-image :(linear-gradient(rgba(159, 215, 179, 0.5), rgba(62, 83, 70, 0.5)),url(/img/end.png));
+    background-position: center center;
+    // background-image: url(/img/end.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    div{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        display: inline-block;
+        text-align: center;
+    
+    }
+
+   footer{
+        border:5em rgb(57, 189, 132);
+    }
+    .footer-border{
+        width: 100%;
+        height: 5vh;
+        align-items: center;
+        padding: 5em;
+        background-color: solid rgb(52, 186, 177);
+    }
+
+    span{
+        padding: 4rem;
+        
+    }
+    h1{
+        font-size: 3rem;
+        color: beige;
+    }
+    a{
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: white;
+    }
+    img{
+        height: 3.5rem;
+    }
+    
+    
+}
+
+    
+.container3{
+    height: 100vh;
+    width: 100wh;
+    background-image :(linear-gradient(rgba(154, 210, 175, 0.5), rgba(40, 70, 52,0.5)),url(/img/last.jpg));
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    // flex-direction: row ;
+
+    .carousel{
+        position: relative;
+        // top: 4rem;
+        .carousel_item{
+
+        height:80vh;
+        width: 50vw;
+        background-color: #888;
+        color: #f80404;
+        font-size: 4rem;
+        // padding: 1rem;
+        display:flex;
+        // padding-top: 0rem;
+        align-items: center;
+        justify-content: center;
+        display: none;
+
+        .img{
+            height: 80vh;
+            width: 50vw;
+        }
+        video{
+            height: 80vh;
+            width: 50vw;
+        }
+
+      }
+    
+    .item_selected{
+        display: block;
+      }
+        .car_nav{
+        width: 50vw;
+        height: 5vh;
+        // padding: 2rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        // background-color: #8d4b42;
+        text-align :center;
+
+        .btn{
+            height: 1rem;
+            width: 1rem;
+            display: inline-block;
+            background-color: rgba(69, 134, 39, 0.3 );
+            border-radius: 50%;
+            margin : 0 5px;
+            cursor: pointer;
+        }
+
+        .btn_selected{
+            background-color: rgba(3, 37, 14, 0.5);
+        }
+
+        } 
+
+
+    
+      }
+     
+}
+    
+           
+
+.container4{
+    @include container ;
+    background-image :(linear-gradient(rgba(92, 125, 109, 0.5), rgba(149, 204, 170, 0.5)),url(/img/co3.png));
+        
+    background-size: cover;
+    background-position: center;
+
+  
+        
+}
+
+
