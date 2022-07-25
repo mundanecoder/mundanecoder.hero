@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  bottom: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -53,7 +54,8 @@ html {
   border: 10rem;
   font-size: 2.5rem;
   padding: 1rem;
-  background: rgba(17, 173, 95, 0.7);
+  background: rgba(8, 165, 212, 0.7);
+  z-index: 9999;
 }
 .container .fixed .active {
   text-decoration: underline;
@@ -64,10 +66,8 @@ html {
   position: fixed;
   background-color: rgba(54, 115, 148, 0.5);
   top: 0;
-  height: 7rem;
-}
-.container span {
-  padding: 0.5rem;
+  height: 8rem;
+  z-index: 999999;
 }
 .container a {
   color: black;
@@ -276,6 +276,47 @@ html {
   background-image: linear-gradient(rgba(92, 125, 109, 0.5), rgba(149, 204, 170, 0.5)), url(/img/co3.png);
   background-size: cover;
   background-position: center;
+  align-items: center;
+}
+.container4 .blog_nav {
+  height: 5vh;
+  width: 100vw;
+  background-color: #31a5a5;
+  display: flex;
+  justify-content: center;
+}
+.container4 .blog_nav .blog_conatiner {
+  height: 15rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 30, 0);
+  text-align: center;
+  font-size: 3rem;
+}
+.container4 .blog_nav .blogs {
+  font-size: 2rem;
+  color: #f80404;
+  padding: 1rem;
+}
+.container4 .content {
+  text-align: center;
+  height: 80vh;
+  width: 60vw;
+}
+.container4 .content h1 {
+  color: rgb(38, 0, 255);
+  padding: 7vh;
+  font-size: 3rem;
+}
+.container4 .content h2 {
+  color: #13258d;
+  padding: 1rem;
+  font-size: 2.5rem;
+  left: 1rem;
+}
+.container4 .content p {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
