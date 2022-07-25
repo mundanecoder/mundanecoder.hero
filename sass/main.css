@@ -36,7 +36,7 @@ html {
 }
 .container header .description {
   font-family: "Square Peg", cursive;
-  font-size: 6rem;
+  font-size: 4rem;
   color: rgba(7, 3, 54, 0.8);
   font-weight: bold;
   text-align: center;
@@ -44,7 +44,7 @@ html {
 .container header span {
   color: rgb(71, 12, 12);
   font-weight: bolder;
-  font-size: 6rem;
+  font-size: 4rem;
 }
 .container nav {
   display: flex;
