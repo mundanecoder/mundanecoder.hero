@@ -51,7 +51,7 @@ html{
         }
         .description{
             font-family: 'Square Peg', cursive;
-            font-size :4rem ;
+            font-size :5rem ;
             color: rgba(7, 3, 54, 0.8);
             font-weight: bold;
             text-align: center;
@@ -59,7 +59,7 @@ html{
         span{
             color: rgb(71, 12, 12);
             font-weight: bolder;
-            font-size: 4rem;
+            font-size: 5rem;
         }
 
     }
@@ -154,22 +154,23 @@ html{
 
         div{
             left: 20rem;
-            height: 25vh;
+            height: 35vh;
             width: 33vw;
             background-color: rgba(5, 41, 12, 0.7);
             padding:2rem;
+            object-fit: contain;
             // margin: 2rem;
 
             li{
-                font-size: 2rem;
+                font-size: 1.7rem;
                 // font-weight:bold;
-                color: #ffffff;
+                color: #2fc944;
                 padding: 0.25rem;
             }
             ul{
                 font-size: 2rem;
                 // font-weight: bold;
-                color: #ffffff;
+                color: #224109;
                 text-decoration: underline;
             }
             
@@ -206,7 +207,7 @@ html{
     }
     .reviews{
         text-align: center;
-        padding-bottom: 10rem;
+        padding-bottom: 0rem;
         color:rgba(255, 255, 255, 0.776);
         // font-weight: 700;
         font-family: 'EB Garamond', serif;
@@ -347,8 +348,9 @@ html{
 .container3{
     height: 100vh;
     width: 100vw;
-    background-image :(linear-gradient(rgba(154, 210, 175, 0.5), rgba(40, 70, 52,0.5)),url(/img/last.jpg));
+    background-image :(linear-gradient(rgba(159, 211, 149, 0.3), rgba(158, 110, 39, 0.3)),url(/img/bg.jpg));
     background-size: cover;
+
     background-position: center;
     display: flex;
     justify-content: center;
@@ -422,7 +424,7 @@ html{
 
 .container4{
     @include container ;
-    background-image :(linear-gradient(rgba(92, 125, 109, 0.5), rgba(149, 204, 170, 0.5)),url(/img/co3.png));
+    background-image :(linear-gradient(rgba(196, 136, 27, 0.5), rgba(15, 100, 47, 0.5)),url(/img/bg2.jpg));
         
     background-size: cover;
     background-position: center;
@@ -442,7 +444,7 @@ html{
         padding: 1rem;
         height: 5vh;
         width: 100vw;
-        background-color: #31a5a5;
+        background-color: #721e0ff8;
         display: flex;
         // align-items: center center;
         justify-content: center;
@@ -459,10 +461,12 @@ html{
             
     }
        a{
-            font-size: 2rem;
-            color: #b4174b;
+            font-size: 3rem;
+            color: #eed8df;
             padding: 1rem;
             // text-align: center;
+            // list-style: none;
+            text-decoration: none;
         }
         // .write_box{
 
@@ -483,6 +487,17 @@ html{
         color: rgb(30, 53, 156);
         font-family: cursive;
     }}
+    .modal_body{
+
+        h2{
+            font-size: 2rem;
+            color: #f80404;
+            text-decoration: underline;
+        }
+        h2:hover{
+            color: #a03535;
+        }
+    }
 
     .modal {
         display: none; /* Hidden by default */
@@ -501,7 +516,7 @@ html{
     
     /* Modal Content */
     .modal-content {
-        background-color: rgba(14, 155, 165, 0.7);
+        background-color: rgba(44, 165, 14, 0.7);
         margin: auto;
         padding: 5rem;
         border: 1px solid #888;
@@ -509,7 +524,8 @@ html{
         height: 50vh;
         // text-align: center;
         h2{
-            font-size: 2rem;
+            font-size: 4rem;
+
         }
         p{
             font-size: 2rem;

@@ -36,7 +36,7 @@ html {
 }
 .container header .description {
   font-family: "Square Peg", cursive;
-  font-size: 4rem;
+  font-size: 5rem;
   color: rgba(7, 3, 54, 0.8);
   font-weight: bold;
   text-align: center;
@@ -44,7 +44,7 @@ html {
 .container header span {
   color: rgb(71, 12, 12);
   font-weight: bolder;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .container nav {
   display: flex;
@@ -105,19 +105,20 @@ html {
 }
 .container .achievement div {
   left: 20rem;
-  height: 25vh;
+  height: 35vh;
   width: 33vw;
   background-color: rgba(5, 41, 12, 0.7);
   padding: 2rem;
+  object-fit: contain;
 }
 .container .achievement div li {
-  font-size: 2rem;
-  color: #ffffff;
+  font-size: 1.7rem;
+  color: #2fc944;
   padding: 0.25rem;
 }
 .container .achievement div ul {
   font-size: 2rem;
-  color: #ffffff;
+  color: #224109;
   text-decoration: underline;
 }
 
@@ -140,7 +141,7 @@ html {
 }
 .container1 .reviews {
   text-align: center;
-  padding-bottom: 10rem;
+  padding-bottom: 0rem;
   color: rgba(255, 255, 255, 0.776);
   font-family: "EB Garamond", serif;
 }
@@ -190,7 +191,7 @@ html {
 .container3 {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(154, 210, 175, 0.5), rgba(40, 70, 52, 0.5)), url(/img/last.jpg);
+  background-image: linear-gradient(rgba(159, 211, 149, 0.3), rgba(158, 110, 39, 0.3)), url(/img/bg.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -246,7 +247,7 @@ html {
 .container4 {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(92, 125, 109, 0.5), rgba(149, 204, 170, 0.5)), url(/img/co3.png);
+  background-image: linear-gradient(rgba(196, 136, 27, 0.5), rgba(15, 100, 47, 0.5)), url(/img/bg2.jpg);
   background-size: cover;
   background-position: center;
   align-items: center;
@@ -262,7 +263,7 @@ html {
   padding: 1rem;
   height: 5vh;
   width: 100vw;
-  background-color: #31a5a5;
+  background-color: rgba(114, 30, 15, 0.9725490196);
   display: flex;
   justify-content: center;
 }
@@ -276,9 +277,10 @@ html {
   font-size: 3rem;
 }
 .container4 .blog_nav a {
-  font-size: 2rem;
-  color: #b4174b;
+  font-size: 3rem;
+  color: #eed8df;
   padding: 1rem;
+  text-decoration: none;
 }
 .container4 .write_box {
   width: 100vw;
@@ -293,6 +295,14 @@ html {
   font-size: 2.3rem;
   color: rgb(30, 53, 156);
   font-family: cursive;
+}
+.container4 .modal_body h2 {
+  font-size: 2rem;
+  color: #f80404;
+  text-decoration: underline;
+}
+.container4 .modal_body h2:hover {
+  color: #a03535;
 }
 .container4 .modal {
   display: none; /* Hidden by default */
@@ -309,7 +319,7 @@ html {
   /* Modal Content */
 }
 .container4 .modal .modal-content {
-  background-color: rgba(14, 155, 165, 0.7);
+  background-color: rgba(44, 165, 14, 0.7);
   margin: auto;
   padding: 5rem;
   border: 1px solid #888;
@@ -318,7 +328,7 @@ html {
   /* The Close Button */
 }
 .container4 .modal .modal-content h2 {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 .container4 .modal .modal-content p {
   font-size: 2rem;
