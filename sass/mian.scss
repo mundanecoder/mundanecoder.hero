@@ -22,7 +22,7 @@ html{
 }
 .container{
     @include flexmin;
-    background-image :(linear-gradient(rgba(39, 88, 10, 0.5),rgba(62, 83, 70, 0.5)),url(/img/1st.jpg));
+    background-image :(linear-gradient(rgba(39, 88, 10, 0.5),rgba(62, 83, 70, 0.5)),url(/img/nbg.jpg));
     background-size: cover;
     // background: rgb(49,125,134);
     // background: linear-gradient(90deg, rgba(49,125,134,1) 0%, rgba(204,215,226,1) 0%),url(/img/bg4.png);
@@ -33,10 +33,10 @@ html{
     text-align: center;
     header{
         width: 100wh;
-        height: 25rem;
+        height: 15rem;
         position:sticky;
         // background-color:#7e652b;
-        background-image: url(/img/fixed2.png);
+        // background-image: url(/img/fixed2.png);
         // background-color: gainsboro;
         background-position:center;
         background-size: cover;
@@ -46,9 +46,10 @@ html{
             // font-family: 'Mukta', sans-serif;
             font-family: 'Square Peg', cursive;
             font-size: 9rem;
+            // font-weight: bold;
             // padding-top: 0.5em;
             text-align: center;
-            color:rgb(216, 67, 26);
+            color:rgb(195, 240, 190);
 
         }
         .description{
@@ -70,6 +71,8 @@ html{
         // padding: 1rem;
         display: flex;
         justify-content: center;
+        background: rgba(82, 67, 167, 0.4);
+        height: 6rem;
         // color: $txt-color;
         // background: rgb(2,0,36);
     }
@@ -77,13 +80,14 @@ html{
     
     .fixed{
         width: 100vw;
-        // height: 7rem;
+        height: 6rem;
         display: flex;
+        align-items: center;
         justify-content: space-around;
         // border: 10rem;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         padding: 1rem;
-        background: rgba(255, 255, 255, 0.4);
+        
         // position: fixed;
         z-index: 9999;
 
@@ -106,9 +110,9 @@ html{
     }
     .sticky{
         position: fixed;
-        background-color: rgba(25, 94, 4, 0.5);
+        background-color:rgba(19, 90, 69, 0.9),;
         top: 0;
-        height: 8rem;
+        height: 7rem;
         z-index: 999999;
         // border:100rem;
         // background: blue;
@@ -117,9 +121,8 @@ html{
         // font-size: 3rem;
 
         span{
-            font-size: 3.5rem;
-
-            
+            font-size: 3.0rem;
+            // color: azure;
         }
     }
     
@@ -127,7 +130,7 @@ html{
         padding: 1.5rem;
     }
     a{
-        color:rgb(3, 1, 1);
+        color:rgb(238, 222, 222);
         text-decoration: none;
     }
     a:hover{
@@ -137,24 +140,25 @@ html{
     }
     .carousel1{
         height: 60vh;
-        width: 100vw;
+        width: 100%;
         background:transparent;
-        opacity: 0.9;
+        // opacity: 0.9;
         display: grid;
-        // margin-top:2vh ;
-        grid-template-columns: 20% 1fr 20%;
+        margin-top:2vh ;
+        // position: relative;
+        grid-template-columns: 15% 1fr 15%;
 
         .carousel_item{
             display: grid;
-            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(6,1fr);
             position: relative;
             place-items: center;
             // gap:1rem;
             background:transparent;
 
             .item{
-            height: 55vh;
-            width: 60vw;
+            height: 60vh;
+            width: 70vw;
             background-color: transparent;
             // border: 0.25rem solid yellow;
             display: none;
@@ -170,9 +174,12 @@ html{
                 transition-delay: 0.07ms;
             }
             img{
-               height: 55vh;
-               width: 40vw; 
-               border: 0.1rem solid rgb(186, 192, 218);
+               height: 58vh;
+               width: 50vw; 
+               border: 0.1rem solid rgb(134, 236, 177);
+            //    background: rgba(219, 188, 176, 0.5);
+            backface-visibility: visible;
+                // opacity:0.9 ;
             }
         }
         .bttn_con{
@@ -183,18 +190,39 @@ html{
         }
 
         .a_btn{
-            font-size: 6rem;
-            color: #dce6e9;
-            border: 0.2rem solid rgb(127, 197, 22);
+            font-size: 4rem;
+            color: #e9d4d5;
+            // border: 0.2rem solid rgb(32, 32, 31);
             opacity: 1;
             
         }
         .a_btn:hover{
             opacity: 0.9;
-            background: #6baa61;
+            background: #3e413e;
             text-decoration: none;
         }
 
+    }
+
+    .THEME{
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(148, 180, 178, 0.5);
+        h1{
+            font-size: 2rem;
+            color: white;
+
+        .JAPAN{
+            color: #e0f804;
+            font-weight: 900;
+            
+        }
+        .JAPAN:hover{
+            color: rgba(236, 14, 14, 0.5);
+        }
+        }
     }
    
     .services{
@@ -434,75 +462,80 @@ html{
 .container3{
     height: 100vh;
     width: 100vw;
-    background-image :(linear-gradient(rgba(159, 211, 149, 0.3), rgba(158, 110, 39, 0.3)),url(/img/bg.jpg));
-    background-size: cover;
+    background-image :(linear-gradient(rgba(159, 211, 149, 0.3), rgba(137, 148, 216, 0.3)),url(/img/cbg.jpg));
+    background-size:cover;
+    // opacity: 0.8;
 
-    background-position: center;
+    background-position:center;
     display: flex;
-    justify-content: center;
-    padding-top: 10rem;
+    // justify-content: center;
+    align-items: center;
+    // padding-top: 10rem;
     // flex-direction: row ;
-
-    .carousel{
-        position: relative;
-        // top: 1vh;
-        .carousel_item{
-
-        height:80vh;
-        width: 60vw;
-        background-color: #888;
-        color: #f80404;
-        font-size: 4rem;
-        // padding: 1rem;
-        display:flex;
-        // padding-top: rem;
-        align-items: center;
-        justify-content: center;
-        display: none;
-
-        .img{
-            height: 80vh;
-            width: 60vw;
-        }
-        video{
-            height: 80vh;
-            width: 60vw;
-        }
-
-      }
-    
-    .item_selected{
-        display: block;
-      }
-        .car_nav{
-        width: 60vw;
-        height: 5vh;
+    .services{
+        // width: ;
+        height: 92vh;
+        width: 40vw;
+        display: grid;
+        // grid-template-columns: repeat(3,1fr);
+        justify-content: right;
+        // background-color: rgba(162, 162, 209,0.5);
+        gap: 1rem;
         // padding: 2rem;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        // background-color: #8d4b42;
-        text-align :center;
-
-        .btn{
-            height: 2rem;
-            width: 2rem;
-            display: inline-block;
-            background-color: rgba(98, 122, 12, 0.3);
-            border-radius: 50%;
-            margin : 0 5px;
-            cursor: pointer;
+        padding-right: 2rem;
+        inset: 2rem;
+        .sbox{
+            height: 30vh;
+            width: 35vw;
+            border: 0.25rem solid yellow;
+            font-size: 4rem;
+            text-align: center;
+            background-color: rgba(112, 112, 177,0.6);
+            p{
+                text-align: center;
+                padding: 1rem;
+                font-size: 2rem;
+                color: beige;
+            }
         }
+    }
 
-        .btn_selected{
-            background-color: rgba(145, 53, 11, 0.5);
+    .intro{
+        height: 100vh;
+        width: 100%;
+        direction: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        p{
+            // top: 5rem;
+            width: 100%;
+            text-align: center;
+            font-size: 2.4rem;
+            color: #f8f8f8;
         }
+    }
 
-        } 
-
+.con{
+    height: 100vh;
+    width: 100px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    .con1{
+        height: 40vh;
+        width: 60vw;
+        // background: rgba(95, 189, 95,0.6);
+        video{
+            padding-right: 60rem;
+            height: 40vh;
+            width: 60vw
+        }
+    }
+}
 
     
-      }
      
 }
     
@@ -574,10 +607,12 @@ html{
         font-family: cursive;
     }}
     .modal_body{
+       
 
         h2{
+            padding: 1rem;
             font-size: 2rem;
-            color: #f80404;
+            color: #82af95;
             text-decoration: underline;
         }
         h2:hover{
@@ -595,36 +630,43 @@ html{
         width: 100vw; 
         height: 100vh;
         overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(88, 199, 171, 0.4); /* Black w/ opacity */
+        background-color: rgb(161, 133, 133); /* Fallback color */
+        background-color: rgba(164, 221, 208, 0.7); /* Black w/ opacity */
         
     
     
     /* Modal Content */
     .modal-content {
-        background-color: rgba(44, 165, 14, 0.7);
+        background-color: rgba(190, 212, 184, 0.7);
         margin: auto;
         padding: 5rem;
         border: 1px solid #888;
+        align-items: center;
         width: 80vw;
-        height: 50vh;
+        height: 60vh;
         // text-align: center;
         h2{
             font-size: 4rem;
+            color:black;
 
         }
         p{
             font-size: 2rem;
+            color:black;
+        }
+        .re{
+            height: 2rem;
+            color: #f80404;
         }
     input{
-        background-color: rgba(173, 222, 236, 0.5);
+        background-color: rgba(172, 216, 224, 0.5);
         border: none;
-        border-radius: 20%;
+        // border-radius: 20%;
     }
     
     /* The Close Button */
     .close {
-        color: #f80404;
+        color: #1c04f8;
         float: right;
         font-size: 3rem;
         font-weight: bold;
@@ -633,13 +675,13 @@ html{
     
     .ebcf_close:hover,
     .ebcf_close:focus {
-        color: rgba(131, 24, 24,0.5);
+        color: rgba(206, 160, 160, 0.5);
         text-decoration: none;
         cursor: pointer;
     }
     .form{
         font-size: 2rem;
-        color: rgb(131, 36, 36);
+        color: rgb(158, 42, 42);
     }
 }
 }   
@@ -728,5 +770,3 @@ html{
   
         
 }
-
-

@@ -12,7 +12,7 @@ html {
 }
 
 .container {
-  background-image: linear-gradient(rgba(39, 88, 10, 0.5), rgba(62, 83, 70, 0.5)), url(/img/1st.jpg);
+  background-image: linear-gradient(rgba(39, 88, 10, 0.5), rgba(62, 83, 70, 0.5)), url(/img/nbg.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -22,9 +22,8 @@ html {
 }
 .container header {
   width: 100wh;
-  height: 25rem;
+  height: 15rem;
   position: sticky;
-  background-image: url(/img/fixed2.png);
   background-position: center;
   background-size: cover;
   align-items: center;
@@ -33,7 +32,7 @@ html {
   font-family: "Square Peg", cursive;
   font-size: 9rem;
   text-align: center;
-  color: rgb(216, 67, 26);
+  color: rgb(195, 240, 190);
 }
 .container header .description {
   font-family: "Square Peg", cursive;
@@ -50,14 +49,17 @@ html {
 .container nav {
   display: flex;
   justify-content: center;
+  background: rgba(82, 67, 167, 0.4);
+  height: 6rem;
 }
 .container .fixed {
   width: 100vw;
+  height: 6rem;
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.4);
   z-index: 9999;
 }
 .container .fixed .active {
@@ -67,19 +69,19 @@ html {
 }
 .container .sticky {
   position: fixed;
-  background-color: rgba(25, 94, 4, 0.5);
+  background-color: rgba(19, 90, 69, 0.9);
   top: 0;
-  height: 8rem;
+  height: 7rem;
   z-index: 999999;
 }
 .container .sticky span {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .container span {
   padding: 1.5rem;
 }
 .container a {
-  color: rgb(3, 1, 1);
+  color: rgb(238, 222, 222);
   text-decoration: none;
 }
 .container a:hover {
@@ -88,22 +90,22 @@ html {
 }
 .container .carousel1 {
   height: 60vh;
-  width: 100vw;
+  width: 100%;
   background: transparent;
-  opacity: 0.9;
   display: grid;
-  grid-template-columns: 20% 1fr 20%;
+  margin-top: 2vh;
+  grid-template-columns: 15% 1fr 15%;
 }
 .container .carousel1 .carousel_item {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   position: relative;
   place-items: center;
   background: transparent;
 }
 .container .carousel1 .carousel_item .item {
-  height: 55vh;
-  width: 60vw;
+  height: 60vh;
+  width: 70vw;
   background-color: transparent;
   display: none;
   opacity: 0.9;
@@ -115,9 +117,10 @@ html {
   transition-delay: 0.07ms;
 }
 .container .carousel1 .carousel_item img {
-  height: 55vh;
-  width: 40vw;
-  border: 0.1rem solid rgb(186, 192, 218);
+  height: 58vh;
+  width: 50vw;
+  border: 0.1rem solid rgb(134, 236, 177);
+  backface-visibility: visible;
 }
 .container .carousel1 .bttn_con {
   background: transparent;
@@ -126,15 +129,32 @@ html {
   place-items: center;
 }
 .container .carousel1 .a_btn {
-  font-size: 6rem;
-  color: #dce6e9;
-  border: 0.2rem solid rgb(127, 197, 22);
+  font-size: 4rem;
+  color: #e9d4d5;
   opacity: 1;
 }
 .container .carousel1 .a_btn:hover {
   opacity: 0.9;
-  background: #6baa61;
+  background: #3e413e;
   text-decoration: none;
+}
+.container .THEME {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(148, 180, 178, 0.5);
+}
+.container .THEME h1 {
+  font-size: 2rem;
+  color: white;
+}
+.container .THEME h1 .JAPAN {
+  color: #e0f804;
+  font-weight: 900;
+}
+.container .THEME h1 .JAPAN:hover {
+  color: rgba(236, 14, 14, 0.5);
 }
 .container .services {
   display: flex;
@@ -259,57 +279,65 @@ html {
 .container3 {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(159, 211, 149, 0.3), rgba(158, 110, 39, 0.3)), url(/img/bg.jpg);
+  background-image: linear-gradient(rgba(159, 211, 149, 0.3), rgba(137, 148, 216, 0.3)), url(/img/cbg.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center;
-  padding-top: 10rem;
+  align-items: center;
 }
-.container3 .carousel {
-  position: relative;
+.container3 .services {
+  height: 92vh;
+  width: 40vw;
+  display: grid;
+  justify-content: right;
+  gap: 1rem;
+  padding-right: 2rem;
+  inset: 2rem;
 }
-.container3 .carousel .carousel_item {
-  height: 80vh;
-  width: 60vw;
-  background-color: #888;
-  color: #f80404;
+.container3 .services .sbox {
+  height: 30vh;
+  width: 35vw;
+  border: 0.25rem solid yellow;
   font-size: 4rem;
-  display: flex;
+  text-align: center;
+  background-color: rgba(112, 112, 177, 0.6);
+}
+.container3 .services .sbox p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  color: beige;
+}
+.container3 .intro {
+  height: 100vh;
+  width: 100%;
+  direction: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container3 .intro p {
+  width: 100%;
+  text-align: center;
+  font-size: 2.4rem;
+  color: #f8f8f8;
+}
+.container3 .con {
+  height: 100vh;
+  width: 100px;
+  display: grid;
   align-items: center;
   justify-content: center;
-  display: none;
+  grid-template-columns: repeat(2, 1fr);
 }
-.container3 .carousel .carousel_item .img {
-  height: 80vh;
+.container3 .con .con1 {
+  height: 40vh;
   width: 60vw;
 }
-.container3 .carousel .carousel_item video {
-  height: 80vh;
+.container3 .con .con1 video {
+  padding-right: 60rem;
+  height: 40vh;
   width: 60vw;
-}
-.container3 .carousel .item_selected {
-  display: block;
-}
-.container3 .carousel .car_nav {
-  width: 60vw;
-  height: 5vh;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-.container3 .carousel .car_nav .btn {
-  height: 2rem;
-  width: 2rem;
-  display: inline-block;
-  background-color: rgba(98, 122, 12, 0.3);
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-.container3 .carousel .car_nav .btn_selected {
-  background-color: rgba(145, 53, 11, 0.5);
 }
 
 .container4 {
@@ -365,8 +393,9 @@ html {
   font-family: cursive;
 }
 .container4 .modal_body h2 {
+  padding: 1rem;
   font-size: 2rem;
-  color: #f80404;
+  color: #82af95;
   text-decoration: underline;
 }
 .container4 .modal_body h2:hover {
@@ -382,32 +411,38 @@ html {
   width: 100vw;
   height: 100vh;
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(88, 199, 171, 0.4); /* Black w/ opacity */
+  background-color: rgb(161, 133, 133); /* Fallback color */
+  background-color: rgba(164, 221, 208, 0.7); /* Black w/ opacity */
   /* Modal Content */
 }
 .container4 .modal .modal-content {
-  background-color: rgba(44, 165, 14, 0.7);
+  background-color: rgba(190, 212, 184, 0.7);
   margin: auto;
   padding: 5rem;
   border: 1px solid #888;
+  align-items: center;
   width: 80vw;
-  height: 50vh;
+  height: 60vh;
   /* The Close Button */
 }
 .container4 .modal .modal-content h2 {
   font-size: 4rem;
+  color: black;
 }
 .container4 .modal .modal-content p {
   font-size: 2rem;
+  color: black;
+}
+.container4 .modal .modal-content .re {
+  height: 2rem;
+  color: #f80404;
 }
 .container4 .modal .modal-content input {
-  background-color: rgba(173, 222, 236, 0.5);
+  background-color: rgba(172, 216, 224, 0.5);
   border: none;
-  border-radius: 20%;
 }
 .container4 .modal .modal-content .close {
-  color: #f80404;
+  color: #1c04f8;
   float: right;
   font-size: 3rem;
   font-weight: bold;
@@ -415,13 +450,13 @@ html {
 }
 .container4 .modal .modal-content .ebcf_close:hover,
 .container4 .modal .modal-content .ebcf_close:focus {
-  color: rgba(131, 24, 24, 0.5);
+  color: rgba(206, 160, 160, 0.5);
   text-decoration: none;
   cursor: pointer;
 }
 .container4 .modal .modal-content .form {
   font-size: 2rem;
-  color: rgb(131, 36, 36);
+  color: rgb(158, 42, 42);
 }
 .container4 .parts {
   display: grid;
