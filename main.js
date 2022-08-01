@@ -80,7 +80,7 @@ var carou_items = document.querySelectorAll(`.item[data-no]`);
 var carou_bttn = document.querySelectorAll('.a_btn');
 var i =1;
 
-function next(e){
+function nextt(e){
     if(e.target.id.includes('next')){
          i++;
         (document.querySelector(`.item[data-no="${i}"]`)).classList.add('show')
@@ -102,6 +102,6 @@ function next(e){
 
     }
 }
-carou_bttn.forEach(bttn => (bttn.addEventListener('click',next)))
+carou_bttn.forEach(bttn => (bttn.addEventListener('click',nextt)))
 
 ///////////////////////////////////////////////////////////////////////////////////
