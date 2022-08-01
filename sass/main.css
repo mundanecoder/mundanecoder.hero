@@ -1,6 +1,7 @@
 * {
   margin: 0;
   bottom: 0;
+  left: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -11,7 +12,7 @@ html {
 }
 
 .container {
-  background-image: linear-gradient(rgba(39, 88, 10, 0.5), rgba(62, 83, 70, 0.5)), url(/img/pic.png);
+  background-image: linear-gradient(rgba(39, 88, 10, 0.5), rgba(62, 83, 70, 0.5)), url(/img/1st.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -37,12 +38,12 @@ html {
 .container header .description {
   font-family: "Square Peg", cursive;
   font-size: 5rem;
-  color: rgba(7, 3, 54, 0.8);
+  color: rgba(36, 173, 36, 0.8);
   font-weight: bold;
   text-align: center;
 }
 .container header span {
-  color: rgb(71, 12, 12);
+  color: rgb(7, 31, 61);
   font-weight: bolder;
   font-size: 5rem;
 }
@@ -85,6 +86,56 @@ html {
   color: rgb(3, 35, 53);
   text-decoration: underline;
 }
+.container .carousel1 {
+  height: 60vh;
+  width: 100vw;
+  background: transparent;
+  opacity: 0.9;
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+}
+.container .carousel1 .carousel_item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+  place-items: center;
+  background: transparent;
+}
+.container .carousel1 .carousel_item .item {
+  height: 55vh;
+  width: 60vw;
+  background-color: transparent;
+  display: none;
+  opacity: 0.9;
+}
+.container .carousel1 .carousel_item .show {
+  display: block;
+  opacity: 1;
+  position: relative;
+  transition-delay: 0.07ms;
+}
+.container .carousel1 .carousel_item img {
+  height: 55vh;
+  width: 40vw;
+  border: 0.1rem solid rgb(186, 192, 218);
+}
+.container .carousel1 .bttn_con {
+  background: transparent;
+  font-size: 5rem;
+  display: grid;
+  place-items: center;
+}
+.container .carousel1 .a_btn {
+  font-size: 6rem;
+  color: #dce6e9;
+  border: 0.2rem solid rgb(127, 197, 22);
+  opacity: 1;
+}
+.container .carousel1 .a_btn:hover {
+  opacity: 0.9;
+  background: #6baa61;
+  text-decoration: none;
+}
 .container .services {
   display: flex;
   flex-direction: row;
@@ -102,24 +153,38 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-around;
+  margin: 4rem;
+  justify-content: center;
 }
-.container .achievement div {
-  left: 20rem;
-  height: 35vh;
-  width: 33vw;
-  background-color: rgba(5, 41, 12, 0.7);
+.container .achievement .outside {
+  height: 30vh;
+  width: 30vw;
+  border-radius: 20%;
+  background-color: rgba(77, 88, 10, 0.747);
   padding: 2rem;
   object-fit: contain;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
-.container .achievement div li {
+.container .achievement .outside .inside {
+  display: grid;
+  place-items: center;
+}
+.container .achievement .outside li {
   font-size: 1.7rem;
-  color: #2fc944;
+  color: #e4f1e6;
   padding: 0.25rem;
 }
-.container .achievement div ul {
+.container .achievement .outside ul {
   font-size: 2rem;
-  color: #224109;
+  color: #7bc03f;
   text-decoration: underline;
+}
+.container .achievement .outside ul:hover {
+  color: #dbebde;
+  text-decoration: none;
 }
 
 .container1 {
@@ -149,6 +214,9 @@ html {
   height: 5.5rem;
 }
 .container1 .reviews p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding-top: 2rem;
   font-size: 3.5rem;
 }
@@ -247,7 +315,7 @@ html {
 .container4 {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(196, 136, 27, 0.5), rgba(15, 100, 47, 0.5)), url(/img/bg2.jpg);
+  background-image: linear-gradient(rgba(196, 160, 93, 0.5), rgba(144, 165, 152, 0.5)), url(/img/1BG.png);
   background-size: cover;
   background-position: center;
   align-items: center;
@@ -293,7 +361,7 @@ html {
   width: 80vw;
   height: 5vh;
   font-size: 2.3rem;
-  color: rgb(30, 53, 156);
+  color: rgb(170, 176, 202);
   font-family: cursive;
 }
 .container4 .modal_body h2 {
@@ -305,10 +373,10 @@ html {
   color: #a03535;
 }
 .container4 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100vw;

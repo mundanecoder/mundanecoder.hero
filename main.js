@@ -1,12 +1,9 @@
 var navbar = document.getElementById("navbar")
-var menu = document.getElementById("menu")
+// var menu = document.getElementById("menu")
 
 
 window.addEventListener("scroll",() => {
-// console.log('scrolled');
-const scrollable = document.documentElement.scrollHeight - window.innerHeight;
 const scrolled = window.scrollY;
-// console.log(scrolled);
 
 if(scrolled > 180){
 navbar.classList.add("sticky");
@@ -16,6 +13,7 @@ else{
 }
 });
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 var section = document.querySelectorAll('section');
 var navli = document.querySelectorAll('nav .fixed span ');
@@ -47,105 +45,63 @@ window.addEventListener('scroll', ()=> {
 
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+var Modal = document.getElementById('mySizeChartModal');
 
-var ebModal = document.getElementById('mySizeChartModal');
+var Btn = document.getElementById("mySizeChart");
 
-var ebBtn = document.getElementById("mySizeChart");
+var Span = document.getElementsByClassName("close")[0];
 
-var ebSpan = document.getElementsByClassName("close")[0];
-
-ebBtn.onclick = function() {
-    ebModal.style.display = "block";
+Btn.onclick = function() {
+    Modal.style.display = "block";
 }
 
-ebSpan.onclick = function() {
-    ebModal.style.display = "none";
+Span.onclick = function() {
+    Modal.style.display = "none";
 }
 
 window.onclick = function(event) {
-    if (event.target == ebModal) {
-        ebModal.style.display = "none";
+    if (event.target == Modal) {
+        Modal.style.display = "none";
     }
 };
 
 
+/////////////////////////////////////////////////////////////////////////////
 
-// var spanc = '<span class="btn"></span>;
+//////////////////////////////////////////////////////////////////////////////
 
-document.querySelectorAll(".carousel").forEach( carousel => {
-    var items = carousel.querySelectorAll(".carousel_item");
-            const button = Array.from(items,() => {
-                 return '<span class="btn"></span>'
-            });
-            // console.log(button)
+var carou_box = document.querySelectorAll('.carousel1');
+var carou_item_= document.querySelectorAll('.carousel_item')
+var btn_l = document.getElementById('back');
+var btn_R = document.getElementById('next');
+var carou_items = document.querySelectorAll(`.item[data-no]`);
+var carou_bttn = document.querySelectorAll('.a_btn');
+var i =1;
 
-            carousel.insertAdjacentHTML("beforeend", `
-            <div class="car_nav">
-            ${button.join("")}
-            
-            </div>
-            
-            `);
-             
-            const buttons = carousel.querySelectorAll(".btn");
-
-            buttons.forEach((button, i)  => {
-                button.addEventListener("click", () => {
-                items.forEach(item => item.classList.remove("item_selected") );
-                buttons.forEach(button => button.classList.remove("btn_selected")); 
-
-                items[i].classList.add("item_selected");
-                button.classList.add("btn_selected");
-
-
-                });
-            
-             });
-
-            //  console.log(buttons);
-
-             items[0].classList.add("item_selected");
-             button[0].classList.add("btn_selected");
-        });
-
-
-    
-
-//  document.querySelectorAll(".blog_nav .blog_container").forEach( blog_carousel => {
-//         var content = blog_carousel.querySelectorAll(".blog_items");
-//              const blogton = Array.from(content,() => {
-//                      return '<span> <a class="blog_items" href=""></a></span>'
-//                     });
-//                     console.log(blogton);
+function next(e){
+    if(e.target.id.includes('next')){
+         i++;
+        (document.querySelector(`.item[data-no="${i}"]`)).classList.add('show')
         
-//                     blog_carousel.insertAdjacentHTML("", `
-//                     <div class="blog_container" >
-//                     ${blogton.join("")}
-                    
-//                     </div>
-                    
-//                     `); 
-//                 });
-                     
-//                     const blogtons = carousel.querySelectorAll(".btn");
+        setInterval((document.querySelector(`.item[data-no="${i-1}"]`)).classList.remove('show'),100 )
         
-//                 //     buttons.forEach((button, i)  => {
-//                 //         button.addEventListener("click", () => {
-//                 //         items.forEach(item => item.classList.remove("item_selected") );
-//                 //         buttons.forEach(button => button.classList.remove("btn_selected")); 
-        
-//                 //         items[i].classList.add("item_selected");
-//                 //         button.classList.add("btn_selected");
-        
-        
-//                 //         });
-                    
-//                 //      });
-        
-//                 //      console.log(buttons);
-        
-//                 //      items[0].classList.add("item_selected");
-//                 //      button[0].classList.add("btn_selected");
-//                 // });
-        
+    }
+
+    else if(e.target.id.includes('back')){
+        i--;
+        (document.querySelector(`.item[data-no="${i}"]`)).classList.add('show')
+
+        setInterval((document.querySelector(`.item[data-no="${i+1}"]`)).classList.remove('show'),100 )
+
+        console.log(i);
+
+
+
+
+    }
+}
+carou_bttn.forEach(bttn => (bttn.addEventListener('click',next)))
+
+///////////////////////////////////////////////////////////////////////////////////
