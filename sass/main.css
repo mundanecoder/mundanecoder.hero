@@ -69,7 +69,7 @@ html {
 }
 .container .sticky {
   position: fixed;
-  background-color: rgba(19, 90, 69, 0.9);
+  background-color: rgba(13, 14, 13, 0.4);
   top: 0;
   height: 7rem;
   z-index: 999999;
@@ -95,6 +95,7 @@ html {
   display: grid;
   margin-top: 2vh;
   grid-template-columns: 15% 1fr 15%;
+  position: static;
 }
 .container .carousel1 .carousel_item {
   display: grid;
@@ -129,8 +130,8 @@ html {
   place-items: center;
 }
 .container .carousel1 .a_btn {
-  font-size: 4rem;
-  color: #e9d4d5;
+  font-size: 7rem;
+  color: #83d473;
   opacity: 1;
 }
 .container .carousel1 .a_btn:hover {
@@ -210,105 +211,89 @@ html {
 .container1 {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(159, 215, 179, 0.5), rgba(62, 83, 70, 0.5)), url(/img/end.png);
+  background-image: linear-gradient(rgba(212, 200, 28, 0.5), rgba(159, 175, 88, 0.5)), url(/img/avatar.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
 }
-.container1 .feedback {
-  padding-bottom: 4rem;
-  text-align: center;
-  font-size: 3rem;
-  color: rgb(114, 39, 16);
-}
-.container1 .reviews {
-  text-align: center;
-  padding-bottom: 0rem;
-  color: rgba(255, 255, 255, 0.776);
-  font-family: "EB Garamond", serif;
-}
-.container1 .reviews img {
-  height: 5.5rem;
-}
-.container1 .reviews p {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 2rem;
-  font-size: 3.5rem;
-}
-.container1 div {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  display: inline-block;
-  text-align: center;
-}
-.container1 footer {
-  border: 5em rgb(57, 189, 132);
-}
-.container1 .footer-border {
+.container1 .main .connect {
+  height: 76vh;
   width: 100%;
-  height: 5vh;
+  background-position: top;
+  background-size: cover;
+  display: flex;
   align-items: center;
-  background-color: solid rgb(52, 186, 177);
+  justify-content: center;
 }
-.container1 span {
-  padding-bottom: 2rem;
+.container1 .main .connect h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #134a9e;
 }
-.container1 h1 {
-  font-size: 3.5rem;
-  color: rgba(12, 37, 104, 0.8);
-  padding: 2rem;
+.container1 .main .f_container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.container1 h1:hover {
-  color: rgba(2, 9, 26, 0.9);
+.container1 .main .f_container .foot_box {
+  height: 10vh;
+  width: 100%;
+  background-color: #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.container1 a {
-  font-size: 2.5rem;
-  text-decoration: none;
-  color: rgb(158, 42, 42);
-}
-.container1 img {
-  height: 6.5rem;
+.container1 .main .f_container .foot_box img {
+  padding: 0.5rem;
+  height: 10vh;
+  width: vw;
 }
 
 .container3 {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(159, 211, 149, 0.3), rgba(137, 148, 216, 0.3)), url(/img/cbg.jpg);
+  background-image: linear-gradient(rgba(160, 177, 64, 0.3), rgba(116, 101, 21, 0.3)), url(/img/cbg.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
 }
-.container3 .services {
+.container3 .about {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container3 .about .me {
+  background-color: #a03535;
+  z-index: 9999;
+}
+.container3 .about .services {
+  padding-top: 2rem;
   height: 92vh;
-  width: 40vw;
+  width: 38vw;
   display: grid;
   justify-content: right;
   gap: 1rem;
   padding-right: 2rem;
   inset: 2rem;
 }
-.container3 .services .sbox {
+.container3 .about .services .sbox {
   height: 30vh;
   width: 35vw;
-  border: 0.25rem solid yellow;
   font-size: 4rem;
   text-align: center;
-  background-color: rgba(112, 112, 177, 0.6);
+  background-color: rgba(72, 82, 29, 0.6);
 }
-.container3 .services .sbox p {
+.container3 .about .services .sbox p {
   text-align: center;
   padding: 1rem;
   font-size: 2rem;
-  color: beige;
+  color: rgb(245, 245, 245);
 }
-.container3 .intro {
+.container3 .about .intro {
   height: 100vh;
   width: 100%;
   direction: flex;
@@ -316,13 +301,13 @@ html {
   align-items: center;
   justify-content: flex-start;
 }
-.container3 .intro p {
+.container3 .about .intro p {
   width: 100%;
   text-align: center;
   font-size: 2.4rem;
   color: #f8f8f8;
 }
-.container3 .con {
+.container3 .about .con {
   height: 100vh;
   width: 100px;
   display: grid;
@@ -330,11 +315,11 @@ html {
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
 }
-.container3 .con .con1 {
+.container3 .about .con .con1 {
   height: 40vh;
   width: 60vw;
 }
-.container3 .con .con1 video {
+.container3 .about .con .con1 video {
   padding-right: 60rem;
   height: 40vh;
   width: 60vw;
@@ -343,24 +328,25 @@ html {
 .container4 {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(196, 160, 93, 0.5), rgba(144, 165, 152, 0.5)), url(/img/1BG.png);
+  background-image: linear-gradient(rgba(219, 217, 66, 0.5), rgba(155, 148, 55, 0.5)), url(/img/newbg2.jpg);
+  width: 100vw;
   background-size: cover;
   background-position: center;
   align-items: center;
 }
 .container4 header {
-  padding: 1rem;
+  padding: 2rem;
   height: 5vh;
   width: 100vw;
   text-align: center;
   font-size: 2rem;
 }
 .container4 .blog_nav {
-  padding: 1rem;
-  height: 5vh;
+  padding: 3rem;
+  height: 4vh;
   width: 100vw;
-  background-color: rgba(114, 30, 15, 0.9725490196);
   display: flex;
+  place-items: center;
   justify-content: center;
 }
 .container4 .blog_nav .blog_conatiner {
@@ -368,13 +354,13 @@ html {
   width: 100vw;
   display: flex;
   align-items: center;
-  background-color: rgb(224, 154, 145);
+  background-color: rgb(78, 57, 196);
   text-align: center;
   font-size: 3rem;
 }
 .container4 .blog_nav a {
   font-size: 3rem;
-  color: #eed8df;
+  color: #431cb9;
   padding: 1rem;
   text-decoration: none;
 }
@@ -383,19 +369,20 @@ html {
   height: 5vh;
   display: flex;
   justify-content: center;
+  padding: 3.5%;
 }
 .container4 .write_box .write {
-  padding-top: 2.5vh;
+  padding: 5.5vh;
   width: 80vw;
   height: 5vh;
   font-size: 2.3rem;
-  color: rgb(170, 176, 202);
+  color: rgb(0, 3, 10);
   font-family: cursive;
 }
 .container4 .modal_body h2 {
   padding: 1rem;
   font-size: 2rem;
-  color: #82af95;
+  color: #810812;
   text-decoration: underline;
 }
 .container4 .modal_body h2:hover {
@@ -438,7 +425,7 @@ html {
   color: #f80404;
 }
 .container4 .modal .modal-content input {
-  background-color: rgba(172, 216, 224, 0.5);
+  background-color: rgba(93, 131, 138, 0.5);
   border: none;
 }
 .container4 .modal .modal-content .close {
@@ -463,11 +450,11 @@ html {
   justify-content: center;
   grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
-  padding-top: 5%;
+  padding: 4%;
 }
 .container4 .parts div {
-  height: 70vh;
-  width: 19vw;
+  height: 50vh;
+  width: 15vw;
   padding: 1rem;
   text-align: center;
 }
@@ -475,7 +462,7 @@ html {
   padding: 1rem;
 }
 .container4 .parts div img {
-  height: 70vh;
+  height: 50vh;
   width: 19vw;
 }
 
