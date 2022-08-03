@@ -81,23 +81,24 @@ var carou_bttn = document.querySelectorAll('.a_btn');
 var i =1;
 
 function nextt(e){
-    if(i<0 && i>5) {return;}
-
-    if(e.target.id.includes('next')){
+    
+    if(e.target.id.includes('next')&& i!=carou_items.length){
          i++;
+         console.log(`.item[data-no="${i}"]`);
         (document.querySelector(`.item[data-no="${i}"]`)).classList.add('show')
         
         setInterval((document.querySelector(`.item[data-no="${i-1}"]`)).classList.remove('show'),50)
         
     }
 
-    else if(e.target.id.includes('back')){
+    else if(e.target.id.includes('back') && i!=1){
         i--;
+        console.log(`.item[data-no="${i}"]`);
         (document.querySelector(`.item[data-no="${i}"]`)).classList.add('show')
 
         setInterval((document.querySelector(`.item[data-no="${i+1}"]`)).classList.remove('show'),50 )
 
-        console.log(i);
+       
 
 
 
