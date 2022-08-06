@@ -380,9 +380,8 @@ html {
 .container4 .write_box .write {
   width: 80vw;
   height: 5vh;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   color: rgb(0, 3, 10);
-  font-family: cursive;
 }
 .container4 .modal_body h2 {
   padding: 1rem;
