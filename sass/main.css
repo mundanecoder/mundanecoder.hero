@@ -24,13 +24,14 @@ html {
   width: 100wh;
   height: 15rem;
   position: sticky;
+  display: grid;
   background-position: center;
   background-size: cover;
-  align-items: center;
+  place-items: center;
 }
 .container header #SIGN {
   font-family: "Square Peg", cursive;
-  font-size: 9rem;
+  font-size: 5.5vw;
   text-align: center;
   color: rgb(195, 240, 190);
 }
@@ -54,31 +55,34 @@ html {
 }
 .container .fixed {
   width: 100vw;
-  height: 6rem;
+  height: 6vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 2.2rem;
+  font-size: 1.3vw;
   padding: 1rem;
   z-index: 9999;
 }
-.container .fixed .active {
-  text-decoration: underline;
-  transition: 0.3ms ease text-decoration;
-  color: #50eb3b;
-}
 .container .sticky {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   position: fixed;
   background-color: rgba(13, 14, 13, 0.4);
   top: 0;
   height: 7rem;
   z-index: 999999;
 }
+.container .sticky .active {
+  background-color: rgba(166, 167, 215, 0.7);
+  transition: 1ms ease text-decoration;
+  color: #50eb3b;
+}
 .container .sticky span {
-  font-size: 3rem;
+  font-size: 1.8vw;
 }
 .container span {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .container a {
   color: rgb(238, 222, 222);
@@ -283,14 +287,14 @@ html {
 .container3 .about .services .sbox {
   height: 30vh;
   width: 35vw;
-  font-size: 4rem;
+  font-size: 2vw;
   text-align: center;
   background-color: rgba(72, 82, 29, 0.6);
 }
 .container3 .about .services .sbox p {
   text-align: center;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.7vw;
   color: rgb(245, 245, 245);
 }
 .container3 .about .intro {
@@ -329,20 +333,22 @@ html {
   height: 100vh;
   width: 100vw;
   background-image: linear-gradient(rgba(219, 217, 66, 0.5), rgba(155, 148, 55, 0.5)), url(/img/newbg2.jpg);
-  width: 100vw;
   background-size: cover;
   background-position: center;
   align-items: center;
 }
 .container4 header {
-  padding: 2rem;
+  padding-bottom: 2vh;
   height: 5vh;
   width: 100vw;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.4vw;
+}
+.container4 header h1 {
+  color: rgb(5, 8, 89);
 }
 .container4 .blog_nav {
-  padding: 3rem;
+  padding-top: 3vh;
   height: 4vh;
   width: 100vw;
   display: flex;
@@ -356,10 +362,9 @@ html {
   align-items: center;
   background-color: rgb(78, 57, 196);
   text-align: center;
-  font-size: 3rem;
 }
-.container4 .blog_nav a {
-  font-size: 3rem;
+.container4 .blog_nav span a {
+  font-size: 1.4vw;
   color: #431cb9;
   padding: 1rem;
   text-decoration: none;
@@ -370,18 +375,18 @@ html {
   display: flex;
   justify-content: center;
   padding: 3.5%;
+  object-fit: cover;
 }
 .container4 .write_box .write {
-  padding: 5.5vh;
   width: 80vw;
   height: 5vh;
-  font-size: 2.3rem;
+  font-size: 1.3vw;
   color: rgb(0, 3, 10);
   font-family: cursive;
 }
 .container4 .modal_body h2 {
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.2vw;
   color: #810812;
   text-decoration: underline;
 }
@@ -404,10 +409,12 @@ html {
 }
 .container4 .modal .modal-content {
   background-color: rgba(175, 241, 157, 0.7);
+  display: grid;
   margin: auto;
   padding: 5rem;
   border: 1px solid rgb(226, 15, 15);
   align-items: center;
+  justify-content: center;
   width: 80vw;
   height: 60vh;
   /* The Close Button */
@@ -422,7 +429,7 @@ html {
 }
 .container4 .modal .modal-content .re {
   height: 2rem;
-  color: #f80404;
+  color: #4a0808;
 }
 .container4 .modal .modal-content input {
   background-color: rgba(93, 131, 138, 0.5);
@@ -450,16 +457,13 @@ html {
   justify-content: center;
   grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
-  padding: 4%;
+  padding-top: 15vh;
 }
 .container4 .parts div {
   height: 50vh;
   width: 15vw;
-  padding: 1rem;
+  padding: 0.3rem;
   text-align: center;
-}
-.container4 .parts div span {
-  padding: 1rem;
 }
 .container4 .parts div img {
   height: 50vh;

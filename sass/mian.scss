@@ -35,17 +35,18 @@ html{
         width: 100wh;
         height: 15rem;
         position:sticky;
+        display: grid;
         // background-color:#7e652b;
         // background-image: url(/img/fixed2.png);
         // background-color: gainsboro;
         background-position:center;
         background-size: cover;
-        align-items: center;
+        place-items: center;
 
         #SIGN{
             // font-family: 'Mukta', sans-serif;
             font-family: 'Square Peg', cursive;
-            font-size: 9rem;
+            font-size: 5.5vw;
             // font-weight: bold;
             // padding-top: 0.5em;
             text-align: center;
@@ -80,12 +81,12 @@ html{
     
     .fixed{
         width: 100vw;
-        height: 6rem;
+        height: 6vh;
         display: flex;
         align-items: center;
         justify-content: space-around;
         // border: 10rem;
-        font-size: 2.2rem;
+        font-size: 1.3vw;
         padding: 1rem;
         
         // position: fixed;
@@ -94,14 +95,7 @@ html{
         // .active11{
             // background-color: #000000;
         // }
-        .active{
-            // background-color: #bb2828;
-            text-decoration: underline;
-
-            transition: 0.3ms ease text-decoration;
-            // font-size: 2rem;
-            color: #50eb3b;
-        }
+        
         // .active a{
         //     color: white;
 
@@ -109,25 +103,39 @@ html{
         
     }
     .sticky{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         position: fixed;
         background-color:rgba(13, 14, 13, 0.4),;
         top: 0;
         height: 7rem;
         z-index: 999999;
+        // background-color: #1c04f8;
         // border:100rem;
         // background: blue;
         // left: 0;
         // padding: 1em,2em;
         // font-size: 3rem;
+        .active{
+            background-color:rgba(166, 167, 215, 0.7);
+            // text-decoration: underline;
+
+            transition: 1ms ease text-decoration;
+        
+            color: #50eb3b;
+        }
 
         span{
-            font-size: 3.0rem;
+            font-size: 1.8vw;
+            // background-color: #134a9e;
             // color: azure;
         }
     }
     
     span{
-        padding: 1.5rem;
+        // padding-top: 0.5vh;
+        padding: 1rem;
     }
     a{
         color:rgb(238, 222, 222);
@@ -406,13 +414,13 @@ html{
             height: 30vh;
             width: 35vw;
             // border: 0.25rem solid yellow;
-            font-size: 4rem;
+            font-size: 2vw;
             text-align: center;
             background-color: rgba(72, 82, 29, 0.6);
             p{
                 text-align: center;
                 padding: 1rem;
-                font-size: 2rem;
+                font-size: 1.7vw;
                 color: rgb(245, 245, 245);
             }
         }
@@ -461,23 +469,28 @@ html{
 .container4{
     @include container ;
     background-image :(linear-gradient(rgba(219, 217, 66, 0.5), rgba(155, 148, 55, 0.5)),url(/img/newbg2.jpg));
-    width: 100vw;
+    // width: 100vw;
     background-size: cover;
     background-position: center;
     // display: inline-block;
     align-items: center;
+    // border: 2rem #f87a04;`
 
     header{
-        padding: 2rem;
+        padding-bottom: 2vh;
         height: 5vh;
         width: 100vw;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.4vw;
+        h1{
+            color: rgb(5, 8, 89);
+            // text-decoration-color: 0.2rem solid black;
+        }
     }
 
     .blog_nav{
         
-        padding: 3rem;
+        padding-top: 3vh;
         height: 4vh;
         width: 100vw;
         // background-color: rgba(210, 221, 209, 0.5);
@@ -494,11 +507,11 @@ html{
             align-items: center;
             background-color: rgb(78, 57, 196);
             text-align: center;
-            font-size: 3rem;
+            // 
             
     }
-       a{
-            font-size: 3rem;
+      span a{
+            font-size: 1.4vw;
             color: #431cb9;
             padding: 1rem;
             // text-align: center;
@@ -516,12 +529,13 @@ html{
         display: flex;
         justify-content: center;
         padding: 3.5%;
+        object-fit: cover;
 
     .write{
-        padding: 5.5vh;
+        // padding: 0.vh;
         width: 80vw;
         height: 5vh;
-        font-size: 2.3rem;
+        font-size: 1.3vw;
         color: rgb(0, 3, 10);
         font-family: cursive;
     }}
@@ -530,7 +544,7 @@ html{
 
         h2{
             padding: 1rem;
-            font-size: 2rem;
+            font-size: 1.2vw;
             color: #810812;
             text-decoration: underline;
         }
@@ -557,10 +571,12 @@ html{
     /* Modal Content */
     .modal-content {
         background-color: rgba(175, 241, 157, 0.7);
+        display: grid;
         margin: auto;
         padding: 5rem;
         border: 1px solid rgb(226, 15, 15);
         align-items: center;
+        justify-content: center;
         width: 80vw;
         height: 60vh;
         // text-align: center;
@@ -575,7 +591,8 @@ html{
         }
         .re{
             height: 2rem;
-            color: #f80404;
+            // font-size: 1.4vw;
+            color: #4a0808;
         }
     input{
         background-color: rgba(93, 131, 138, 0.5);
@@ -610,17 +627,20 @@ html{
         justify-content: center;
         grid-template-columns: repeat(5,1fr);
         justify-content: space-between;
-        padding: 4%;
+        padding-top: 15vh;
+
+        // padding: 5%;
         // display: none;
 
         div{
             height: 50vh;
             width: 15vw;
         //    background-color: #ad6565;
-           padding: 1rem;
+           padding: 0.3rem;
+        //    z-index: -9999;
             text-align: center;
             span{
-                padding: 1rem;
+                // padding: 0.5rem;
             }
             img{
                 // object-fit: ;
